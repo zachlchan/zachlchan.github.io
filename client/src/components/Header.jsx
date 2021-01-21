@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeader = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
   font-family: 'Work Sans', sans-serif;
   font-size: 2rem;
   text-align: center;
