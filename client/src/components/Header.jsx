@@ -12,11 +12,17 @@ const StyledHeader = styled.div`
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 `;
+ let name = '';
 
-const Header = () => {
+const Header = ({ width }) => {
+  if (width < 501) {
+    name = 'ZACH CHAN';
+  } else {
+    name = 'ZACH | CHAN';
+  }
   return (
     <StyledHeader>
-      ZACH | CHAN
+      {name}
     </StyledHeader>
   )
 }
