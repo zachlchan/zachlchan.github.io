@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const StyledNav = styled.nav`
   font-family: 'Work Sans', sans-serif;
   font-weight: 600;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: .085rem;
-  display: table;
   margin: 0 auto;
   padding-top: 0.625rem;
 `;
@@ -19,7 +19,7 @@ const StyledLi = styled.li`
   list-style-type: none;
   padding-left: .875rem;
   padding-right: .875rem;
-  line-height: 3rem;
+  padding-top: 3rem;
 `;
 const StyledA = styled.a`
   text-decoration: none;
@@ -30,6 +30,15 @@ let displayValue;
 
 const StyledDiv = styled.div`
   display: ${() => displayValue};
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.95;
+  padding: 25%;
+  height: 100%;
+  width: 50%;
+  z-index: 9;
 `;
 
 const MenuModal = ({ visible }) => {
