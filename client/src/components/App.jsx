@@ -39,7 +39,7 @@ class App extends Component {
         <Header width={width}/>
         <Navigation />
         <Drawer click={this.handleDrawerClick} />
-        <MenuModal visible={showMenu} />
+        <MenuModal visible={showMenu} click={this.handleDrawerClick} />
       </div>
     );
   }

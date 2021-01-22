@@ -55,7 +55,7 @@ const StyledDiv = styled.div`
   z-index: 9;
 `;
 
-const MenuModal = ({ visible }) => {
+const MenuModal = ({ visible, click }) => {
   if (visible) {
     displayValue = 'block';
   } else {
@@ -63,7 +63,7 @@ const MenuModal = ({ visible }) => {
   }
   return (
     <StyledDiv>
-      <StyledSVGcontainer>
+      <StyledSVGcontainer onClick={click}>
         <StyledSVG viewBox="0 0 24 24">
           <StyledLine x1="24" y1="0" y2="24" strokeMiterlimit="10"/>
           <StyledLine x1="24" y1="24" y2="0" strokeMiterlimit="10"/>
