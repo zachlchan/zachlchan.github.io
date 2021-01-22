@@ -1,6 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Navigation = () => {
+  return (
+    <StyledNav>
+      <StyledUl>
+        <StyledLi><StyledA href="#about">About</StyledA></StyledLi>
+        <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
+        <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
+        <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
+        <StyledLi><StyledA href="#education">Education</StyledA></StyledLi>
+        <StyledLi><StyledA href="#contact">Contact</StyledA></StyledLi>
+      </StyledUl>
+    </StyledNav>
+  )
+}
+
 const StyledNav = styled.nav`
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
@@ -24,19 +39,5 @@ const StyledA = styled.a`
   text-decoration: none;
   color: #312f2b;
 `;
-const Navigation = () => {
-  return (
-    <StyledNav>
-      <StyledUl>
-        <StyledLi><StyledA href="#about">About</StyledA></StyledLi>
-        <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
-        <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
-        <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
-        <StyledLi><StyledA href="#education">Education</StyledA></StyledLi>
-        <StyledLi><StyledA href="#contact">Contact</StyledA></StyledLi>
-      </StyledUl>
-    </StyledNav>
-  )
-}
 
 export default Navigation;

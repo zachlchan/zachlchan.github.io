@@ -1,22 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledNav = styled.nav`
-  position: absolute;
-  width: 1.5rem;
-  right: 2%;
-  top: 5%;
-`;
-
-const StyledLine = styled.line`
-  stroke: #000
-`;
-
-const StyledSVG = styled.svg`
-  vertical-align: bottom;
-  stroke-width: 1.5;
-`;
-
 const Drawer = ({ click }) => {
   return (
     <StyledNav>
@@ -29,5 +13,19 @@ const Drawer = ({ click }) => {
     </StyledNav>
   )
 }
+
+const StyledNav = styled.nav`
+  position: absolute;
+  width: 1.5rem;
+  right: 2%;
+  top: 5%;
+`;
+const StyledLine = styled.line`
+  stroke: #000
+`;
+const StyledSVG = styled.svg`
+  vertical-align: bottom;
+  stroke-width: 1.5;
+`;
 
 export default Drawer;

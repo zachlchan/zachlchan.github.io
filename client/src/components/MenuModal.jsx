@@ -1,13 +1,53 @@
 import React from 'react';
 import styled from 'styled-components';
 
+let displayValue;
+
+const MenuModal = ({ visible, click }) => {
+  if (visible) {
+    displayValue = 'block';
+  } else {
+    displayValue = 'none';
+  }
+  return (
+    <StyledDiv>
+      <StyledCloseBTN onClick={click}>
+        <StyledSVG viewBox="0 0 24 24">
+          <StyledLine x1="24" y1="0" y2="24" strokeMiterlimit="10"/>
+          <StyledLine x1="24" y1="24" y2="0" strokeMiterlimit="10"/>
+        </StyledSVG>
+      </StyledCloseBTN>
+      <StyledNav>
+        <StyledUl>
+          <StyledLi><StyledA href="#about">About</StyledA></StyledLi>
+          <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
+          <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
+          <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
+          <StyledLi><StyledA href="#education">Education</StyledA></StyledLi>
+          <StyledLi><StyledA href="#contact">Contact</StyledA></StyledLi>
+        </StyledUl>
+      </StyledNav>
+    </StyledDiv>
+  )
+}
+
+const StyledDiv = styled.div`
+  display: ${() => displayValue};
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.95;
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+`;
 const StyledCloseBTN = styled.div`
   position: relative;
   width: 1.5rem;
   top: 5%;
   left: 90%;
 `;
-
 const StyledLine = styled.line`
   stroke: #000
 `;
@@ -40,47 +80,5 @@ const StyledA = styled.a`
   text-decoration: none;
   color: #312f2b;
 `;
-
-let displayValue;
-
-const StyledDiv = styled.div`
-  display: ${() => displayValue};
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  opacity: 0.95;
-  height: 100%;
-  width: 100%;
-  z-index: 9;
-`;
-
-const MenuModal = ({ visible, click }) => {
-  if (visible) {
-    displayValue = 'block';
-  } else {
-    displayValue = 'none';
-  }
-  return (
-    <StyledDiv>
-      <StyledCloseBTN onClick={click}>
-        <StyledSVG viewBox="0 0 24 24">
-          <StyledLine x1="24" y1="0" y2="24" strokeMiterlimit="10"/>
-          <StyledLine x1="24" y1="24" y2="0" strokeMiterlimit="10"/>
-        </StyledSVG>
-      </StyledCloseBTN>
-      <StyledNav>
-        <StyledUl>
-          <StyledLi><StyledA href="#about">About</StyledA></StyledLi>
-          <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
-          <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
-          <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
-          <StyledLi><StyledA href="#education">Education</StyledA></StyledLi>
-          <StyledLi><StyledA href="#contact">Contact</StyledA></StyledLi>
-        </StyledUl>
-      </StyledNav>
-    </StyledDiv>
-  )
-}
 
 export default MenuModal;
