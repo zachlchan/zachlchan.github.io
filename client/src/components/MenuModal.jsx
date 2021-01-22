@@ -71,6 +71,7 @@ const MenuModal = ({ visible, click }) => {
       </StyledCloseBTN>
       <StyledNav>
         <StyledUl>
+          <StyledLi><StyledA href="#about">About</StyledA></StyledLi>
           <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
           <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
           <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
