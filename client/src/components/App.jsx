@@ -2,14 +2,17 @@ import React, { Component } from 'react';
 import Header from './Header.jsx';
 import Navigation from './Navigation.jsx';
 import Drawer from './Drawer.jsx';
+import MenuModal from './MenuModal.jsx';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       width: null,
+      showMenu: false,
     };
     this.handleResize = this.handleResize.bind(this);
+    this.handleDrawerClick = this.handleDrawerClick.bind(this);
   }
 
   componentDidMount() {
@@ -21,16 +24,22 @@ class App extends Component {
     const width = window.innerWidth
           || document.documentElement.clientWidth
           || document.body.clientWidth;
-    this.setState({width});
+    this.setState({ width });
+  }
+
+  handleDrawerClick() {
+    console.log('click');
+    this.setState({ showMenu: !this.state.showMenu });
   }
 
   render() {
-    const { width } = this.state;
+    const { width, showMenu } = this.state;
     return (
       <div>
         <Header width={width}/>
         <Navigation />
-        <Drawer />
+        <Drawer click={this.handleDrawerClick} />
+        <MenuModal visible={showMenu} />
       </div>
     );
   }
