@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header.jsx';
+import Navigation from './Navigation.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <Navigation />
       </div>
     );
   }
