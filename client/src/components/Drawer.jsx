@@ -14,12 +14,13 @@ const StyledLine = styled.line`
 
 const StyledSVG = styled.svg`
   vertical-align: bottom;
+  stroke-width: 1.5;
 `;
 
-const Drawer = () => {
+const Drawer = ({ click }) => {
   return (
     <StyledNav>
-      <a href="#menu">
+      <a href="#menu" onClick={click}>
         <StyledSVG viewBox="0 0 24 24">
           <StyledLine x1="24" y1="6.5" y2="6.5" strokeMiterlimit="10"/>
           <StyledLine x1="24" y1="17.5" y2="17.5" strokeMiterlimit="10"/>
