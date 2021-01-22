@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StyledNav = styled.nav`
   font-family: 'Work Sans', sans-serif;
-  color: #312f2b;
   text-transform: uppercase;
   letter-spacing: .085rem;
   display: table;
@@ -23,16 +22,17 @@ const StyledLi = styled.li`
 `;
 const StyledA = styled.a`
   text-decoration: none;
+  color: #312f2b;
 `;
 const Navigation = () => {
   return (
     <StyledNav>
       <StyledUl>
-        <StyledLi><StyledA href="#">Projects</StyledA></StyledLi>
-        <StyledLi><StyledA href="#">Skills</StyledA></StyledLi>
-        <StyledLi><StyledA href="#">Work Experience</StyledA></StyledLi>
-        <StyledLi><StyledA href="#">Education</StyledA></StyledLi>
-        <StyledLi><StyledA href="#">Contact</StyledA></StyledLi>
+        <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
+        <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
+        <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
+        <StyledLi><StyledA href="#education">Education</StyledA></StyledLi>
+        <StyledLi><StyledA href="#contact">Contact</StyledA></StyledLi>
       </StyledUl>
     </StyledNav>
   )
