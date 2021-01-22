@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledSVGcontainer = styled.div`
+const StyledCloseBTN = styled.div`
   position: relative;
   width: 1.5rem;
   top: 5%;
@@ -63,12 +63,12 @@ const MenuModal = ({ visible, click }) => {
   }
   return (
     <StyledDiv>
-      <StyledSVGcontainer onClick={click}>
+      <StyledCloseBTN onClick={click}>
         <StyledSVG viewBox="0 0 24 24">
           <StyledLine x1="24" y1="0" y2="24" strokeMiterlimit="10"/>
           <StyledLine x1="24" y1="24" y2="0" strokeMiterlimit="10"/>
         </StyledSVG>
-      </StyledSVGcontainer>
+      </StyledCloseBTN>
       <StyledNav>
         <StyledUl>
           <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
