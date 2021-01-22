@@ -35,9 +35,10 @@ const StyledDiv = styled.div`
   left: 0;
   background-color: #fff;
   opacity: 0.95;
-  padding: 25%;
+  padding-top: 100px;
+  padding-left: 15%;
   height: 100%;
-  width: 50%;
+  width: 100%;
   z-index: 9;
 `;
 
