@@ -2,9 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 let topbotMargin;
+let imgWidth;
 
 const About = ({ width }) => {
   width < 768 ? topbotMargin = '10px' : topbotMargin = '75px';
+  width > 425 ? imgWidth = '75%' : imgWidth = '100%';
 
   return (
     <div>
@@ -15,7 +17,7 @@ const About = ({ width }) => {
 
 const StyledImg = styled.img`
   display: block;
-  width: 100%;
+  width: ${() => imgWidth};
   margin: ${() => topbotMargin} auto ${() => topbotMargin} auto;
 `;
 
