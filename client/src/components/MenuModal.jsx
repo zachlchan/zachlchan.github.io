@@ -4,11 +4,8 @@ import styled from 'styled-components';
 let displayValue;
 
 const MenuModal = ({ visible, click }) => {
-  if (visible) {
-    displayValue = 'block';
-  } else {
-    displayValue = 'none';
-  }
+  visible ? displayValue = 'block' : displayValue = 'none';
+
   return (
     <StyledDiv>
       <StyledCloseBTN onClick={click}>
