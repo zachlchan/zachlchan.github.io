@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Navigation = () => {
+let displayValue;
+
+const Navigation = ({ width }) => {
+  width < 768 ? displayValue = 'none' : displayValue = 'table';
+
   return (
     <StyledNav>
       <StyledUl>
@@ -20,7 +24,7 @@ const StyledNav = styled.nav`
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: .085rem;
-  display: table;
+  display: ${() => displayValue};
   margin: 0 auto;
   padding-top: 0.625rem;
 `;

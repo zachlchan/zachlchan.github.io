@@ -37,8 +37,8 @@ class App extends Component {
     const { width, showMenu } = this.state;
     return (
       <div>
-        <Header width={width}/>
-        <Navigation />
+        <Header width={width} />
+        <Navigation width={width} />
         <Drawer click={this.handleDrawerClick} />
         <MenuModal visible={showMenu} click={this.handleDrawerClick} />
         <About />
