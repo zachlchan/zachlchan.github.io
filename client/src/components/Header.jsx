@@ -4,11 +4,8 @@ import styled from 'styled-components';
 let name = '';
 
 const Header = ({ width }) => {
-  if (width < 501) {
-    name = 'ZACH CHAN';
-  } else {
-    name = 'ZACH | CHAN';
-  }
+  width < 501 ? name = 'zach chan' : name = 'zach | chan';
+
   return (
     <StyledHeader>
       {name}
@@ -23,6 +20,7 @@ const Header = ({ width }) => {
 const StyledHeader = styled.div`
   font-family: 'Work Sans', sans-serif;
   font-size: 3rem;
+  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.5rem;
   text-align: center;
