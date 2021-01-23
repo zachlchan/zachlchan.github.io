@@ -4,7 +4,7 @@ import styled from 'styled-components';
 let name = '';
 
 const Header = ({ width }) => {
-  width < 501 ? name = 'zach chan' : name = 'zach | chan';
+  width < 501 ? name = 'zach chan' : name = 'zach l. chan';
 
   return (
     <StyledHeader>
