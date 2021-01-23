@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import Navigation from './Navigation.jsx';
 import Drawer from './Drawer.jsx';
 import MenuModal from './MenuModal.jsx';
+import About from './About.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class App extends Component {
         <Navigation />
         <Drawer click={this.handleDrawerClick} />
         <MenuModal visible={showMenu} click={this.handleDrawerClick} />
+        <About />
       </div>
     );
   }
