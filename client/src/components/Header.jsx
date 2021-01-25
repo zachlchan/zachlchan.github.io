@@ -25,6 +25,9 @@ const StyledHeader = styled.div`
   letter-spacing: 0.5rem;
   text-align: center;
   color: #556b2f;
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
   padding: 1.25rem;
 `;
 
