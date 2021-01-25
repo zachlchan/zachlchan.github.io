@@ -11,7 +11,7 @@ const About = ({ width }) => {
   width > 425 ? imgWidth = '75%' : imgWidth = '100%';
 
   return (
-    <div>
+    <div id="about">
       <StyledImg src='https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg' alt="profile photo" />
       <SectionHeader text='about' />
       <StyledSection>
