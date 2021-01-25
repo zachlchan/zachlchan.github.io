@@ -77,10 +77,8 @@ const StyledA = styled.a`
   position: relative;
   text-decoration: none;
   color: #312f2b;
-  &:hover {
-    color: #312f2b;
-  }
-  &::before {
+  &:after {
+    display:block;
     content: "";
     position: absolute;
     width: 100%;
@@ -88,13 +86,13 @@ const StyledA = styled.a`
     bottom: 0;
     left: 0;
     background-color: #312f2b;
-    visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s;
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0 50%;
   }
-  &:hover::before {
-    visibility: visible;
+  &:hover:after {
     transform: scaleX(1);
+    transform-origin:0 50%;
   }
 `;
 
