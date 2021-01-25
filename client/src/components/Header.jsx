@@ -25,8 +25,7 @@ const StyledHeader = styled.div`
   letter-spacing: 0.5rem;
   text-align: center;
   color: #556b2f;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding: 1.25rem;
 `;
 
 export default Header;
