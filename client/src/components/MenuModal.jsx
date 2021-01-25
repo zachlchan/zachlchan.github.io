@@ -16,12 +16,12 @@ const MenuModal = ({ visible, click }) => {
       </StyledCloseBTN>
       <StyledNav>
         <StyledUl>
-          <StyledLi><StyledA href="#about">About</StyledA></StyledLi>
-          <StyledLi><StyledA href="#projects">Projects</StyledA></StyledLi>
-          <StyledLi><StyledA href="#skills">Skills</StyledA></StyledLi>
-          <StyledLi><StyledA href="#workexp">Work Experience</StyledA></StyledLi>
-          <StyledLi><StyledA href="#education">Education</StyledA></StyledLi>
-          <StyledLi><StyledA href="#contact">Contact</StyledA></StyledLi>
+          <StyledLi><StyledA href="#about" onClick={click}>About</StyledA></StyledLi>
+          <StyledLi><StyledA href="#projects" onClick={click}>Projects</StyledA></StyledLi>
+          <StyledLi><StyledA href="#skills" onClick={click}>Skills</StyledA></StyledLi>
+          <StyledLi><StyledA href="#workexp" onClick={click}>Work Experience</StyledA></StyledLi>
+          <StyledLi><StyledA href="#education" onClick={click}>Education</StyledA></StyledLi>
+          <StyledLi><StyledA href="#contact" onClick={click}>Contact</StyledA></StyledLi>
         </StyledUl>
       </StyledNav>
     </StyledDiv>
