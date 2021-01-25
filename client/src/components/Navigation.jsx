@@ -40,8 +40,28 @@ const StyledLi = styled.li`
   padding-right: .875rem;
 `;
 const StyledA = styled.a`
+  position: relative;
   text-decoration: none;
   color: #312f2b;
+  &:hover {
+    color: #312f2b;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #312f2b;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 `;
 
 export default Navigation;
