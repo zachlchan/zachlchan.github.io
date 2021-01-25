@@ -78,7 +78,6 @@ const StyledA = styled.a`
   text-decoration: none;
   color: #312f2b;
   &:after {
-    display:block;
     content: "";
     position: absolute;
     width: 100%;
