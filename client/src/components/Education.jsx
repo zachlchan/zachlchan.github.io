@@ -2,13 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SectionHeader from './SectionHeader.jsx';
 
-let schoolFontSize;
-let liFontSize;
-
-const Education = ({ width }) => {
-  width < 426 ? schoolFontSize = '1rem' : schoolFontSize = '1.25rem';
-  width < 426 ? liFontSize = '.875rem' : liFontSize = '1rem';
-
+const Education = () => {
   return (
     <div id="education">
       <SectionHeader text="education" />
@@ -36,22 +30,31 @@ const StyledSection = styled.section`
 `;
 const StyledUl = styled.ul`
   font-family: 'Work Sans', sans-serif;
-  font-size: ${() => schoolFontSize};
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.5rem;
   color: #312f2b;
   margin-bottom: 2rem;
+  @media (max-width: 425px) {
+    font-size: 1rem;
+  }
 `;
 const Date = styled.li`
   font-family: 'Montserrat', sans-serif;
-  font-size: ${() => liFontSize};
+  font-size: 1rem;
   color: #cf8a0c;
   list-style-type: none;
+  @media (max-width: 425px) {
+    font-size: 0.875rem;
+  }
 `;
 const Description = styled.li`
   font-family: 'Montserrat', sans-serif;
-  font-size: ${() => liFontSize};
+  font-size: 1rem;
   list-style-type: none;
+  @media (max-width: 425px) {
+    font-size: 0.875rem;
+  }
 `;
 
 export default Education;
