@@ -4,13 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import SectionHeader from './SectionHeader.jsx';
 
-let ulFontSize;
-let liFontSize;
-
-const WorkExperience = ({ width }) => {
-  width < 426 ? ulFontSize = '1rem' : ulFontSize = '1.25rem';
-  width < 426 ? liFontSize = '.875rem' : liFontSize = '1rem';
-
+const WorkExperience = () => {
   return (
     <div id="workexp">
       <SectionHeader text="work experience" />
@@ -41,23 +35,32 @@ const StyledSection = styled.section`
 `;
 const StyledUl = styled.ul`
   font-family: 'Work Sans', sans-serif;
-  font-size: ${() => ulFontSize};
+  font-size: 1.25rem;
   font-weight: 500;
   // display: inline-block;
   line-height: 1.5rem;
   color: #312f2b;
   margin-bottom: 2rem;
+  @media (max-width: 425px) {
+    font-size: 1rem;
+  }
 `;
 const Date = styled.li`
   font-family: 'Montserrat', sans-serif;
-  font-size: ${() => liFontSize};
+  font-size: 1rem;
   color: #cf8a0c;
   list-style-type: none;
+  @media (max-width: 425px) {
+    font-size: 0.875rem;
+  }
 `;
 const Description = styled.li`
   font-family: 'Montserrat', sans-serif;
-  font-size: ${() => liFontSize};
+  font-size: 1rem;
   list-style-type: none;
+  @media (max-width: 425px) {
+    font-size: 0.875rem;
+  }
 `;
 const StyledDiv = styled.div`
   text-align: center;
