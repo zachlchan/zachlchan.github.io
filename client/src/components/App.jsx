@@ -4,6 +4,7 @@ import Navigation from './Navigation.jsx';
 import Drawer from './Drawer.jsx';
 import MenuModal from './MenuModal.jsx';
 import About from './About.jsx';
+import Contact from './Contact.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class App extends Component {
         <Drawer click={this.handleDrawerClick} />
         <MenuModal visible={showMenu} click={this.handleDrawerClick} />
         <About width={width} />
+        <Contact width={width} />
       </div>
     );
   }
