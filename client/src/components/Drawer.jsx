@@ -17,8 +17,12 @@ const Drawer = ({ click }) => {
 const StyledNav = styled.nav`
   position: absolute;
   width: 1.5rem;
-  right: 2%;
-  top: 5%;
+  right: 22px;
+  top: 44px;
+  @media (max-width: 425px) {
+    top: 18px;
+    right: 10px;
+  }
 `;
 const StyledLine = styled.line`
   stroke: #000
