@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
   display: block;
   font-family: 'Work Sans', sans-serif;
   font-size: 2rem;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
