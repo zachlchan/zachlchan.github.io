@@ -43,6 +43,10 @@ const StyledA = styled.a`
   position: relative;
   text-decoration: none;
   color: #312f2b;
+  &:hover {
+    color: #312f2b;
+    text-decoration: none;
+  }
   &:after {
     content: "";
     position: absolute;
