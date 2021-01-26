@@ -44,8 +44,7 @@ const StyledWrap = styled.div`
     justify-items: center;
   }
   & .img-container {
-    margin: 50px;
-    width: 300px;
+    margin: 0 auto 50px auto;
   }
   & .screen-shot {
     display: block;
@@ -86,6 +85,12 @@ const StyledCarousel = styled(Carousel)`
   & .carousel-control-next-icon,
     .carousel-control-prev-icon {
     filter: invert(1);
+  }
+  @media (max-width: 425px) {
+    & .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      display: none;
+    }
   }
 `;
 
