@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <StyledWrap id="projects">
       <SectionHeader text="projects" />
-      <section className="grid-display">
+      <section className="flex-grid">
         <StyledCarousel interval={null} wrap={false}>
           <Carousel.Item>
             <div className="img-container">
@@ -25,20 +25,20 @@ const Projects = () => {
             </div>
           </Carousel.Item>
         </StyledCarousel>
-        <header className="project-name">FAWEGO
+        <div className="project-container">
+          <header className="project-name">fawego</header>
           <p className="project-desc">
             An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.
           </p>
-        </header>
+        </div>
       </section>
     </StyledWrap>
   )
 }
 
 const StyledWrap = styled.div`
-  & .grid-display {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+  & .flex-grid {
+    display: flex;
     border-bottom: 2px solid #dfd4bf;
     align-items: center;
     justify-items: center;
@@ -55,22 +55,31 @@ const StyledWrap = styled.div`
     border: 5px solid #000;
     border-radius: 15px;
   }
+  & .project-container {
+    flex: 1;
+    padding: 2rem;
+  }
   & .project-name {
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    // text-transform: uppercase;
+    text-transform: uppercase;
     line-height: 1.5rem;
     color: #312f2b;
-    margin-bottom: 2rem;
-    padding: 2rem;
+    margin-bottom: 1rem;
   }
   & .project-desc {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
   }
+  @media (max-width: 425px) {
+    & .flex-grid {
+      display: block;
+    }
+  }
 `;
 const StyledCarousel = styled(Carousel)`
+  flex: 1;
   & .carousel-indicators > li {
     background-color: #000;
   }
