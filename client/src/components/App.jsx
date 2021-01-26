@@ -4,6 +4,7 @@ import Navigation from './Navigation.jsx';
 import Drawer from './Drawer.jsx';
 import MenuModal from './MenuModal.jsx';
 import About from './About.jsx';
+import Education from './Education.jsx';
 import Contact from './Contact.jsx';
 
 class App extends Component {
@@ -43,6 +44,7 @@ class App extends Component {
         <Drawer click={this.handleDrawerClick} />
         <MenuModal visible={showMenu} click={this.handleDrawerClick} />
         <About width={width} />
+        <Education width={width}/>
         <Contact width={width} />
       </div>
     );
