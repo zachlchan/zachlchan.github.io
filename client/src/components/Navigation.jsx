@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 let displayValue;
 
-const Navigation = ({ width }) => {
-  width < 768 ? displayValue = 'none' : displayValue = 'table';
+const Navigation = () => {
 
   return (
     <StyledNav>
@@ -24,7 +23,11 @@ const StyledNav = styled.nav`
   font-family: 'Work Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: .085rem;
-  display: ${() => displayValue};
+  //display: ${() => displayValue};
+  display: table;
+  @media (max-width: 768px) {
+    display: none;
+  }
   margin: 0 auto;
   padding-top: 0.625rem;
 `;
