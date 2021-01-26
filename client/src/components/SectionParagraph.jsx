@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-let imgWidth;
-
 const SectionParagraph = ({ className, text, width }) => {
-  width > 425 ? imgWidth = '75%' : imgWidth = '100%';
-
   return (
     <StyledP className={className}>
       {text}
@@ -16,8 +12,11 @@ const SectionParagraph = ({ className, text, width }) => {
 const StyledP = styled.p`
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5rem;
-  width: ${() => imgWidth};
+  width: 75%;
   margin: auto;
+  @media (max-width: 425px) {
+    width: 100%
+  }
 `;
 
 export default SectionParagraph;
