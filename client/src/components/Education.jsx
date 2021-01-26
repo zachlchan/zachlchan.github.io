@@ -31,7 +31,7 @@ const Education = ({ width }) => {
 }
 
 const StyledSection = styled.section`
-  border-top: 2px solid #dfd4bf;
+  // border-top: 2px solid #dfd4bf;
   border-bottom: 2px solid #dfd4bf;
 `;
 const StyledUl = styled.ul`
