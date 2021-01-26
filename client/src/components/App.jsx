@@ -42,14 +42,14 @@ class App extends Component {
     return (
       <div>
         <Header width={width} />
-        <Navigation width={width} />
+        <Navigation />
         <Drawer click={this.handleDrawerClick} />
         <MenuModal visible={showMenu} click={this.handleDrawerClick} />
-        <About width={width} />
-        <Projects width={width} />
-        <WorkExperience width={width} />
-        <Education width={width}/>
-        <Contact width={width} />
+        <About />
+        <Projects />
+        <WorkExperience />
+        <Education />
+        <Contact />
       </div>
     );
   }

@@ -5,7 +5,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import SectionHeader from './SectionHeader.jsx';
 import SectionParagraph from './SectionParagraph.jsx';
 
-const Contact = ({ width }) => {
+const Contact = () => {
   return (
     <footer id="contact">
       <SectionHeader text="contact" />
@@ -13,7 +13,7 @@ const Contact = ({ width }) => {
         <a href="https://www.linkedin.com/in/zachlchan/">
           <StyledIcon icon={faLinkedin} />
         </a>
-        <StyledP text={contactText} width={width}/>
+        <StyledP text={contactText} />
       </StyledDiv>
     </footer>
   )
