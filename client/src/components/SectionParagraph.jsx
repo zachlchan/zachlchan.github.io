@@ -3,11 +3,11 @@ import styled from 'styled-components';
 
 let imgWidth;
 
-const SectionBody = ({ text, width }) => {
+const SectionParagraph = ({ className, text, width }) => {
   width > 425 ? imgWidth = '75%' : imgWidth = '100%';
 
   return (
-    <StyledP>
+    <StyledP className={className}>
       {text}
     </StyledP>
   )
@@ -20,4 +20,4 @@ const StyledP = styled.p`
   margin: auto;
 `;
 
-export default SectionBody;
+export default SectionParagraph;
