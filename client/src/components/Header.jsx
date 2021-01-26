@@ -1,18 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
+import Navigation from './Navigation.jsx';
+import Drawer from './Drawer.jsx';
 
 let name = '';
 
-const Header = ({ width }) => {
+const Header = ({ width, click }) => {
   width < 501 ? name = 'zach chan' : name = 'zach l. chan';
 
   return (
-    <StyledHeader>
-      {name}
-    </StyledHeader>
+    <StyledWrap>
+      <StyledHeader>
+        {name}
+      </StyledHeader>
+      <Navigation />
+      <Drawer click={click} />
+    </StyledWrap>
   )
 }
 
+const StyledWrap = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #fff;
+`;
 const StyledHeader = styled.div`
   font-family: 'Work Sans', sans-serif;
   font-size: 3rem;
@@ -21,7 +33,6 @@ const StyledHeader = styled.div`
   letter-spacing: 0.5rem;
   text-align: center;
   color: #556b2f;
-  background-color: #fff;
   padding: 1.25rem;
   @media (max-width: 425px) {
     font-size: 2rem;

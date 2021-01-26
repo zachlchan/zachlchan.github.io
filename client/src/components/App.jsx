@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Header from './Header.jsx';
-import Navigation from './Navigation.jsx';
-import Drawer from './Drawer.jsx';
 import MenuModal from './MenuModal.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
@@ -41,9 +39,7 @@ class App extends Component {
     const { width, showMenu } = this.state;
     return (
       <div>
-        <Header width={width} />
-        <Navigation />
-        <Drawer click={this.handleDrawerClick} />
+        <Header width={width} click={this.handleDrawerClick} />
         <MenuModal visible={showMenu} click={this.handleDrawerClick} />
         <About />
         <Projects />
