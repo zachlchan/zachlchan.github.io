@@ -78,6 +78,10 @@ const StyledA = styled.a`
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 `;
 const StyledIcon = styled(FontAwesomeIcon)`
   color: #fff;
