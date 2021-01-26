@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
   text-align: center;
 `;
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: #312f2b;
+  color: #cf8a0c;
   font-size: 2rem;
   margin-bottom: 1rem;
   transition: transform 0.2s;
