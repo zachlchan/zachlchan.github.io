@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SectionParagraph = ({ className, text, width }) => {
+const SectionParagraph = ({ className, text }) => {
   return (
     <StyledP className={className}>
       {text}
