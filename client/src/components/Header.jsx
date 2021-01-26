@@ -13,10 +13,6 @@ const Header = ({ width }) => {
   )
 }
 
-// tan background, grey text:
-// background-color: #dfd4bf;
-// color: #312f2b;
-
 const StyledHeader = styled.div`
   font-family: 'Work Sans', sans-serif;
   font-size: 3rem;
@@ -27,6 +23,12 @@ const StyledHeader = styled.div`
   color: #556b2f;
   background-color: #fff;
   padding: 1.25rem;
+  @media (max-width: 425px) {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 5%;
+    padding: 0.375rem;
+  }
 `;
 
 export default Header;
