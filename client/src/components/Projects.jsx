@@ -5,42 +5,70 @@ import SectionHeader from './SectionHeader.jsx';
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <StyledWrap id="projects">
       <SectionHeader text="projects" />
-      <StyledSection>
+      <section className="grid-display">
         <StyledCarousel interval={null} wrap={false}>
           <Carousel.Item>
-            <StyledDiv>
-              <StyledImg src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.png" alt="start screen"/>
-            </StyledDiv>
+            <div className="img-container">
+              <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.png" alt="start screen"/>
+            </div>
           </Carousel.Item>
           <Carousel.Item>
-            <StyledDiv>
-              <StyledImg src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.png" alt="tracking screen"/>
-            </StyledDiv>
+            <div className="img-container">
+              <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.png" alt="tracking screen"/>
+            </div>
           </Carousel.Item>
           <Carousel.Item>
-            <StyledDiv>
-              <StyledImg src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.png" alt="paused screen"/>
-            </StyledDiv>
+            <div className="img-container">
+              <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.png" alt="paused screen"/>
+            </div>
           </Carousel.Item>
         </StyledCarousel>
-        <StyledUl>fawego
-          <Description>
+        <header className="project-name">FAWEGO
+          <p className="project-desc">
             An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.
-          </Description>
-        </StyledUl>
-      </StyledSection>
-    </div>
+          </p>
+        </header>
+      </section>
+    </StyledWrap>
   )
 }
 
-const StyledSection = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  border-bottom: 2px solid #dfd4bf;
-  align-items: center;
-  justify-items: center;
+const StyledWrap = styled.div`
+  & .grid-display {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    border-bottom: 2px solid #dfd4bf;
+    align-items: center;
+    justify-items: center;
+  }
+  & .img-container {
+    margin: 50px;
+    width: 300px;
+  }
+  & .screen-shot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border: 5px solid #000;
+    border-radius: 15px;
+  }
+  & .project-name {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    // text-transform: uppercase;
+    line-height: 1.5rem;
+    color: #312f2b;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  & .project-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
 `;
 const StyledCarousel = styled(Carousel)`
   & .carousel-indicators > li {
@@ -50,34 +78,6 @@ const StyledCarousel = styled(Carousel)`
     .carousel-control-prev-icon {
     filter: invert(1);
   }
-`;
-const StyledDiv = styled.div`
-  margin: 50px;
-  width: 400px;
-`;
-const StyledImg = styled.img`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  border: 5px solid #000;
-  border-radius: 15px;
-`;
-const StyledUl = styled.ul`
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 1.5rem;
-  color: #312f2b;
-  margin-bottom: 2rem;
-  background-color: #fff;
-`;
-const Description = styled.li`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  text-transform: none;
-  list-style-type: none;
 `;
 
 export default Projects;
