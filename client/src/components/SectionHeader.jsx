@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SectionHeader = ({ text }) => {
+const SectionHeader = ({ className, text }) => {
   return (
-    <StyledHeader>
+    <StyledHeader className={className}>
       {text}
     </StyledHeader>
   )
