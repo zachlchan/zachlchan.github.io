@@ -6,7 +6,8 @@ import SectionHeader from './SectionHeader.jsx';
 
 const WorkExperience = () => {
   return (
-    <div id="workexp">
+    <div>
+      <a id="workexp" style={{position: 'relative', top: '-160px', visibility: 'hidden'}} />
       <SectionHeader text="work experience" />
       <StyledSection>
         <StyledUl>Product Development Engineer

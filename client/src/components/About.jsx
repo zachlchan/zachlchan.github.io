@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import SectionHeader from './SectionHeader.jsx';
 import SectionParagraph from './SectionParagraph.jsx';
 
+
 const About = () => {
   return (
-    <div id="about">
+    <div>
+      <a id="about" style={{position: 'relative', top: '-192px', visibility: 'hidden'}} />
       <StyledImg src="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" alt="profile photo" />
       <SectionHeader text="about" />
       <StyledSection>
@@ -25,7 +27,7 @@ const StyledSection = styled.section`
 const StyledImg = styled.img`
   display: block;
   width: 75%;
-  margin: 50px auto 50px auto;
+  margin: 0 auto 50px auto;
   @media (max-width: 768px) {
     margin: 10px auto 10px auto;
   }

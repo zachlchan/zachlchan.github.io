@@ -5,7 +5,8 @@ import SectionHeader from './SectionHeader.jsx';
 
 const Projects = () => {
   return (
-    <StyledWrap id="projects">
+    <StyledWrap>
+      <a id="projects" style={{position: 'relative', top: '-162px', visibility: 'hidden'}} />
       <SectionHeader text="projects" />
       <section className="flex-grid">
         <StyledCarousel interval={null} wrap={false}>
