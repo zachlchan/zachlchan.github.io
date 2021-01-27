@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import MenuModal from './MenuModal.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
+import Skills from './Skills.jsx';
 import WorkExperience from './WorkExperience.jsx';
 import Education from './Education.jsx';
 import Contact from './Contact.jsx';
@@ -47,6 +48,7 @@ class App extends Component {
         <MenuModal visible={showMenu} width={width} height={height} click={this.handleDrawerClick} />
         <About />
         <Projects />
+        <Skills />
         <WorkExperience />
         <Education />
         <Contact />
