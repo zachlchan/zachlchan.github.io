@@ -75,6 +75,34 @@ const Projects = () => {
           </div>
         </div>
       </section>
+      <div className="project-divider"/>
+      <section className="flex-grid portfolio">
+        <div className="single-img-container">
+          <div className="img-container">
+            <img className="portfolio-img" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.png" alt="atc thumbnail" />
+          </div>
+        </div>
+        <div className="project-container">
+          <header className="project-name">portfolio (this site)</header>
+          <p className="project-desc">
+            A responsive single page portfolio website built from scratch and hosted using GitHub Pages.
+          </p>
+          <header className="tech-header">tech used:</header>
+          <div>
+            <ul>
+              <li className="tech-item">JavaScript</li>
+              <li className="tech-item">React</li>
+              <li className="tech-item">React Bootstrap</li>
+              <li className="tech-item">styled components</li>
+              <li className="tech-item">webpack</li>
+              <li className="tech-item">Node.js</li>
+              <li className="tech-item">Express.js</li>
+              <li className="tech-item">AWS S3</li>
+              <li className="tech-item">GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </StyledWrap>
   )
 }
@@ -109,6 +137,11 @@ const StyledWrap = styled.div`
     @media (max-width: 910px) {
       display: block;
       width: 100%;
+    }
+  }
+  & .flex-grid.portfolio {
+    @media (max-width: 768px) {
+      display: block;
     }
   }
   & .project-divider {
@@ -166,9 +199,23 @@ const StyledWrap = styled.div`
     display: inline-flex;
     padding: 0.5rem;
   }
+  & .single-img-container {
+    flex: 1.5;
+    object-fit: contain;
+    margin-top: 20px;
+  }
+  & .single-img-container > .img-container {
+    box-shadow: -10px -10px #dfd4bf;
+    border: 1px solid;
+    margin: 2rem;
+  }
+  & .portfolio-img {
+    width: 100%;
+  }
 `;
 const StyledCarousel = styled(Carousel)`
   flex: 1;
+  margin-top: 20px;
   & .carousel-indicators > li {
     background-color: #000;
   }
