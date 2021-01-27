@@ -4,7 +4,8 @@ import SectionHeader from './SectionHeader.jsx';
 
 const Education = () => {
   return (
-    <StyledWrap id="education">
+    <StyledWrap>
+      <a id="education" />
       <SectionHeader text="education" />
       <div className="schools-container">
         <div>
@@ -37,6 +38,17 @@ const Education = () => {
 
 const StyledWrap = styled.div`
   border-bottom: 1px solid #dfd4bf;
+  & #education {
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+    @media (max-width: 768px) {
+      top: -102px;
+    }
+    @media (max-width: 425px) {
+      top: -58px;
+    }
+  }
   & ul {
     padding-inline-start: 0;
   }
