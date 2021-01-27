@@ -43,8 +43,6 @@ const MenuModal = ({ visible, width, height, click }) => {
 const StyledDiv = styled.div`
   display: ${() => displayValue};
   position: sticky;
-  //top: 0;
-  //left: 0;
   background-color: #fff;
   opacity: 0.95;
   width: ${() => `${widthVal}`};
