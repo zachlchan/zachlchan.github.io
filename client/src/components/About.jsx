@@ -8,11 +8,14 @@ const About = () => {
   return (
     <StyledWrap>
       <a id="about" />
+      <div>
       <img className="profile-photo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" alt="profile photo" />
       <SectionHeader text="about" />
       <section className="description">
         <SectionParagraph text={aboutText} />
       </section>
+
+      </div>
     </StyledWrap>
   )
 }
@@ -33,6 +36,7 @@ const StyledWrap = styled.div`
   }
   & .profile-photo {
     display: block;
+    max-width: 1024px;
     width: 75%;
     margin: 0 auto 50px auto;
     @media (max-width: 768px) {

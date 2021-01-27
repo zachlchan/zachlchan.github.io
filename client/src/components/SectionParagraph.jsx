@@ -12,6 +12,7 @@ const SectionParagraph = ({ className, text }) => {
 const StyledP = styled.p`
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5rem;
+  max-width: 1024px;
   width: 75%;
   margin: auto;
   @media (max-width: 425px) {

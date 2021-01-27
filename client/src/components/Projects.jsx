@@ -8,101 +8,101 @@ const Projects = () => {
     <StyledWrap>
       <a id="projects" />
       <SectionHeader text="projects" />
-      <section className="flex-grid fawego">
-        <StyledCarousel interval={null} wrap={false}>
-          <Carousel.Item>
-            <div className="img-container">
-              <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.png" alt="start screen"/>
+        <section className="flex-grid fawego">
+          <StyledCarousel interval={null} wrap={false}>
+            <Carousel.Item>
+              <div className="img-container">
+                <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.png" alt="start screen"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="img-container">
+                <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.png" alt="tracking screen"/>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="img-container">
+                <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.png" alt="paused screen"/>
+              </div>
+            </Carousel.Item>
+          </StyledCarousel>
+          <div className="project-container">
+            <header className="project-name">fawego</header>
+            <p className="project-desc">
+              An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.
+            </p>
+            <header className="tech-header">tech used:</header>
+            <div>
+              <ul>
+                <li className="tech-item">JavaScript</li>
+                <li className="tech-item">React Native</li>
+                <li className="tech-item">Geolocation API</li>
+              </ul>
             </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="img-container">
-              <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.png" alt="tracking screen"/>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="img-container">
-              <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.png" alt="paused screen"/>
-            </div>
-          </Carousel.Item>
-        </StyledCarousel>
-        <div className="project-container">
-          <header className="project-name">fawego</header>
-          <p className="project-desc">
-            An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.
-          </p>
-          <header className="tech-header">tech used:</header>
-          <div>
-            <ul>
-              <li className="tech-item">JavaScript</li>
-              <li className="tech-item">React Native</li>
-              <li className="tech-item">Geolocation API</li>
-            </ul>
           </div>
-        </div>
-      </section>
+        </section>
       <div className="project-divider"/>
-      <section className="flex-grid atc">
-        <StyledCarousel interval={null} wrap={false}>
-        <Carousel.Item>
-            <div className="img-container">
-              <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.png" alt="atc thumbnail" />
-            </div>
-          </Carousel.Item>
+        <section className="flex-grid atc">
+          <StyledCarousel interval={null} wrap={false}>
           <Carousel.Item>
-            <div className="img-container">
-              <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_demo.gif" alt="atc demo" />
+              <div className="img-container">
+                <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.png" alt="atc thumbnail" />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="img-container">
+                <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_demo.gif" alt="atc demo" />
+              </div>
+            </Carousel.Item>
+          </StyledCarousel>
+          <div className="project-container">
+            <header className="project-name">engineered outfitters</header>
+            <p className="project-desc">
+              Built an interactive and responsive "add to cart" component using the microservice architecture.
+            </p>
+            <header className="tech-header">tech used:</header>
+            <div>
+              <ul>
+                <li className="tech-item">JavaScript</li>
+                <li className="tech-item">React</li>
+                <li className="tech-item">webpack</li>
+                <li className="tech-item">Node.js</li>
+                <li className="tech-item">Express.js</li>
+                <li className="tech-item">MongoDB</li>
+                <li className="tech-item">AWS S3</li>
+                <li className="tech-item">AWS EC2</li>
+              </ul>
             </div>
-          </Carousel.Item>
-        </StyledCarousel>
-        <div className="project-container">
-          <header className="project-name">engineered outfitters</header>
-          <p className="project-desc">
-            Built an interactive and responsive "add to cart" component using the microservice architecture.
-          </p>
-          <header className="tech-header">tech used:</header>
-          <div>
-            <ul>
-              <li className="tech-item">JavaScript</li>
-              <li className="tech-item">React</li>
-              <li className="tech-item">webpack</li>
-              <li className="tech-item">Node.js</li>
-              <li className="tech-item">Express.js</li>
-              <li className="tech-item">MongoDB</li>
-              <li className="tech-item">AWS S3</li>
-              <li className="tech-item">AWS EC2</li>
-            </ul>
           </div>
-        </div>
-      </section>
+        </section>
       <div className="project-divider"/>
-      <section className="flex-grid portfolio">
-        <div className="single-img-container">
-          <div className="img-container">
-            <img className="portfolio-img" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.png" alt="atc thumbnail" />
+        <section className="flex-grid portfolio">
+          <div className="single-img-container">
+            <div className="img-container">
+              <img className="portfolio-img" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.png" alt="atc thumbnail" />
+            </div>
           </div>
-        </div>
-        <div className="project-container">
-          <header className="project-name">portfolio (this site)</header>
-          <p className="project-desc">
-            A responsive single page portfolio website built from scratch and hosted using GitHub Pages.
-          </p>
-          <header className="tech-header">tech used:</header>
-          <div>
-            <ul>
-              <li className="tech-item">JavaScript</li>
-              <li className="tech-item">React</li>
-              <li className="tech-item">React Bootstrap</li>
-              <li className="tech-item">styled components</li>
-              <li className="tech-item">webpack</li>
-              <li className="tech-item">Node.js</li>
-              <li className="tech-item">Express.js</li>
-              <li className="tech-item">AWS S3</li>
-              <li className="tech-item">GitHub Pages</li>
-            </ul>
+          <div className="project-container">
+            <header className="project-name">portfolio (this site)</header>
+            <p className="project-desc">
+              A responsive single page portfolio website built from scratch and hosted using GitHub Pages.
+            </p>
+            <header className="tech-header">tech used:</header>
+            <div>
+              <ul>
+                <li className="tech-item">JavaScript</li>
+                <li className="tech-item">React</li>
+                <li className="tech-item">React Bootstrap</li>
+                <li className="tech-item">styled components</li>
+                <li className="tech-item">webpack</li>
+                <li className="tech-item">Node.js</li>
+                <li className="tech-item">Express.js</li>
+                <li className="tech-item">AWS S3</li>
+                <li className="tech-item">GitHub Pages</li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
     </StyledWrap>
   )
 }
