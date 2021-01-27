@@ -8,7 +8,7 @@ const Projects = () => {
     <StyledWrap>
       <a id="projects" />
       <SectionHeader text="projects" />
-      <section className="flex-grid">
+      <section className="flex-grid fawego">
         <StyledCarousel interval={null} wrap={false}>
           <Carousel.Item>
             <div className="img-container">
@@ -33,11 +33,33 @@ const Projects = () => {
           </p>
         </div>
       </section>
+      <div className="project-divider"/>
+      <section className="flex-grid atc">
+        <StyledCarousel interval={null} wrap={false}>
+        <Carousel.Item>
+            <div className="img-container">
+              <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.png" alt="atc thumbnail" />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="img-container">
+              <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_demo.gif" alt="atc demo" />
+            </div>
+          </Carousel.Item>
+        </StyledCarousel>
+        <div className="project-container">
+          <header className="project-name">engineered outfitters</header>
+          <p className="project-desc">
+            Built an interactive and responsive "add to cart" component using the microservice architecture.
+          </p>
+        </div>
+      </section>
     </StyledWrap>
   )
 }
 
 const StyledWrap = styled.div`
+  border-bottom: 2px solid #dfd4bf;
   & #projects {
     position: relative;
     top: -160px;
@@ -51,9 +73,24 @@ const StyledWrap = styled.div`
   }
   & .flex-grid {
     display: flex;
-    border-bottom: 2px solid #dfd4bf;
     align-items: center;
     justify-items: center;
+    padding: 0 1rem;
+    @media (max-width: 425px) {
+      padding: 0;
+      display: block;
+    }
+  }
+  & .flex-grid.atc {
+    @media (max-width: 910px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  & .project-divider {
+    border-bottom: 1px solid #000;
+    opacity: 0.1;
+    margin: 0 1rem;
   }
   & .img-container {
     margin: 0 auto 50px auto;
@@ -65,6 +102,15 @@ const StyledWrap = styled.div`
     width: 200px;
     border: 5px solid #000;
     border-radius: 15px;
+  }
+  & .atc-demo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    @media (max-width: 910px) {
+      width: 100%;
+    }
   }
   & .project-container {
     flex: 1;
@@ -82,11 +128,6 @@ const StyledWrap = styled.div`
   & .project-desc {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-  }
-  @media (max-width: 425px) {
-    & .flex-grid {
-      display: block;
-    }
   }
 `;
 const StyledCarousel = styled(Carousel)`
