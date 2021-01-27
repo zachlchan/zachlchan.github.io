@@ -200,16 +200,17 @@ const StyledWrap = styled.div`
     padding: 0.5rem;
   }
   & .single-img-container {
-    flex: 1.5;
+    flex: 1;
+    display: flex;
+    justify-content: center;
     object-fit: contain;
-    margin-top: 20px;
-  }
-  & .single-img-container > .img-container {
-    box-shadow: -10px -10px #dfd4bf;
-    border: 1px solid;
-    margin: 2rem;
+    padding: 2rem 1rem 0 2rem;
   }
   & .portfolio-img {
+    box-shadow: -10px -10px #dfd4bf;
+    border: 1px solid;
+    padding: 2rem;
+    max-width: 600px;
     width: 100%;
   }
 `;
