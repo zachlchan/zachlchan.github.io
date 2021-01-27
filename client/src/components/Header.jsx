@@ -24,6 +24,7 @@ const StyledWrap = styled.div`
   top: 0;
   z-index: 20;
   background-color: #fff;
+  margin-bottom: 30px;
 `;
 const StyledHeader = styled.div`
   font-family: 'Work Sans', sans-serif;
