@@ -54,7 +54,6 @@ const StyledWrap = styled.div`
   & .workexp-container {
     display: flex;
     justify-content: center;
-    //margin-top: 20px;
     @media (max-width: 768px) {
       display: block;
     }
