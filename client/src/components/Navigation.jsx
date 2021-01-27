@@ -52,6 +52,8 @@ const StyledWrap = styled.div`
     position: relative;
     text-decoration: none;
     color: #312f2b;
+    margin: 0.5rem 1rem;
+    padding: 0;
   }
   & .nav-link:hover {
     color: #312f2b;
