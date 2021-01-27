@@ -6,7 +6,7 @@ import SectionHeader from './SectionHeader.jsx';
 const Projects = () => {
   return (
     <StyledWrap>
-      <a id="projects" style={{position: 'relative', top: '-162px', visibility: 'hidden'}} />
+      <a id="projects" />
       <SectionHeader text="projects" />
       <section className="flex-grid">
         <StyledCarousel interval={null} wrap={false}>
@@ -38,6 +38,17 @@ const Projects = () => {
 }
 
 const StyledWrap = styled.div`
+  & #projects {
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+    @media (max-width: 768px) {
+      top: -82px;
+    }
+    @media (max-width: 425px) {
+      top: -58px;
+    }
+  }
   & .flex-grid {
     display: flex;
     border-bottom: 2px solid #dfd4bf;
