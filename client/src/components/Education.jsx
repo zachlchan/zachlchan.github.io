@@ -36,7 +36,7 @@ const Education = () => {
 }
 
 const StyledWrap = styled.div`
-  border-bottom: 2px solid #dfd4bf;
+  border-bottom: 1px solid #dfd4bf;
   & ul {
     padding-inline-start: 0;
   }

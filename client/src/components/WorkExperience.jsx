@@ -36,7 +36,7 @@ const WorkExperience = () => {
 }
 
 const StyledWrap = styled.div`
-  border-bottom: 2px solid #dfd4bf;
+  border-bottom: 1px solid #dfd4bf;
   & #workexp {
     position: relative;
     top: -160px;

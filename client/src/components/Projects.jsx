@@ -59,7 +59,7 @@ const Projects = () => {
 }
 
 const StyledWrap = styled.div`
-  border-bottom: 2px solid #dfd4bf;
+  border-bottom: 1px solid #dfd4bf;
   & #projects {
     position: relative;
     top: -160px;
