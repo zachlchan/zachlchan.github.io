@@ -24,6 +24,12 @@ const StyledWrap = styled.div`
     position: relative;
     top: -192px;
     visibility: hidden;
+    @media (max-width: 768px) {
+      top: -112px;
+    }
+    @media (max-width: 425px) {
+      top: -60px;
+    }
   }
   & .profile-photo {
     display: block;
