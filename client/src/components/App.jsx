@@ -12,6 +12,7 @@ class App extends Component {
     super(props);
     this.state = {
       width: null,
+      height: null,
       showMenu: false,
     };
     this.handleResize = this.handleResize.bind(this);
@@ -25,9 +26,12 @@ class App extends Component {
 
   handleResize() {
     const width = window.innerWidth
-          || document.documentElement.clientWidth
-          || document.body.clientWidth;
-    this.setState({ width });
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+    const height = window.innerHeight
+      || document.documentElement.clientHeight
+      || document.body.clientHeight;
+    this.setState({ width, height });
   }
 
   handleDrawerClick() {
@@ -36,11 +40,11 @@ class App extends Component {
   }
 
   render() {
-    const { width, showMenu } = this.state;
+    const { width, height, showMenu } = this.state;
     return (
       <div>
         <Header width={width} click={this.handleDrawerClick} />
-        <MenuModal visible={showMenu} click={this.handleDrawerClick} />
+        <MenuModal visible={showMenu} width={width} height={height} click={this.handleDrawerClick} />
         <About />
         <Projects />
         <WorkExperience />
