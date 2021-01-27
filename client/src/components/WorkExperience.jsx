@@ -9,15 +9,20 @@ const WorkExperience = () => {
     <StyledWrap>
       <a id="workexp" />
       <SectionHeader text="work experience" />
-      <section className="work-history">
-        <ul className="job-title">Product Development Engineer
-          <li className="dates">2016-2020</li>
-          <li className="company">Ford Motor Company - eDrive Applications</li>
-        </ul>
-        <ul className="job-title">Process Engineer
-          <li className="dates">2013-2016</li>
-          <li className="company">Ford Motor Company - KCAP Transit Body</li>
-        </ul>
+      <div className="workexp-container">
+        <div className="job-container">
+          <ul className="job-title">Product Development Engineer
+            <li className="dates">2016-2020</li>
+            <li className="company">Ford Motor Company - eDrive Applications</li>
+          </ul>
+        </div>
+        <div className="job-container">
+          <ul className="job-title">Process Engineer
+            <li className="dates">2013-2016</li>
+            <li className="company">Ford Motor Company - KCAP Transit Body</li>
+          </ul>
+        </div>
+      </div>
         <div className="dl-container">
           <div className="dl-button">
             <a className="dl-link" href="https://zc-portfolio.s3-us-west-1.amazonaws.com/Zach-Chan_Resume.pdf" download="zach-chan_resume">
@@ -26,12 +31,12 @@ const WorkExperience = () => {
             </a>
           </div>
         </div>
-      </section>
     </StyledWrap>
   )
 }
 
 const StyledWrap = styled.div`
+  border-bottom: 2px solid #dfd4bf;
   & #workexp {
     position: relative;
     top: -160px;
@@ -43,8 +48,20 @@ const StyledWrap = styled.div`
       top: -58px;
     }
   }
-  & .work-history {
-    border-bottom: 2px solid #dfd4bf;
+  & ul {
+    padding-inline-start: 0;
+  }
+  & .workexp-container {
+    display: flex;
+    justify-content: center;
+    //margin-top: 20px;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+  & .job-container {
+    display: flex;
+    justify-content: center;
   }
   & .job-title {
     font-family: 'Work Sans', sans-serif;
@@ -52,9 +69,11 @@ const StyledWrap = styled.div`
     font-weight: 500;
     line-height: 1.5rem;
     color: #312f2b;
-    margin-bottom: 2rem;
+    margin: 1rem 2rem;
+    padding: 0 2rem;
     @media (max-width: 425px) {
       font-size: 1rem;
+      padding: 0;
     }
   }
   & .dates {
