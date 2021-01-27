@@ -7,33 +7,42 @@ import SectionParagraph from './SectionParagraph.jsx';
 
 const Contact = () => {
   return (
-    <footer id="contact">
-      <SectionHeader text="contact" />
-      <StyledDiv>
+    <StyledFooter id="contact">
+      <SectionHeader className="contact-header" text="contact" />
+      <div className="info-container">
+        <SectionParagraph className="instructions" text={contactText} />
         <a href="https://www.linkedin.com/in/zachlchan/">
-          <StyledIcon icon={faLinkedin} />
+          <FontAwesomeIcon className="linkedin-icon" icon={faLinkedin} />
         </a>
-        <StyledP text={contactText} />
-      </StyledDiv>
-    </footer>
+      </div>
+    </StyledFooter>
   )
 }
 
 const contactText = 'add me on linkedin';
-const StyledDiv = styled.div`
-  text-align: center;
-`;
-const StyledIcon = styled(FontAwesomeIcon)`
-  color: #cf8a0c;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  transition: transform 0.2s;
-  &:hover {
-    transform: scale(1.5);
+
+const StyledFooter = styled.footer`
+  background-color: #dfd4bf;
+  & .contact-header {
+    padding: 0.5rem;
   }
-`;
-const StyledP = styled(SectionParagraph)`
-  text-align: center;
+  & .info-container {
+    text-align: center;
+  }
+  & .linkedin-icon {
+    //color: #cf8a0c;
+    color: #556b2f;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  & .instructions {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 `;
 
 export default Contact;
