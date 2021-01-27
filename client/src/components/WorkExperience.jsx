@@ -7,7 +7,7 @@ import SectionHeader from './SectionHeader.jsx';
 const WorkExperience = () => {
   return (
     <StyledWrap>
-      <a id="workexp" style={{position: 'relative', top: '-160px', visibility: 'hidden'}} />
+      <a id="workexp" />
       <SectionHeader text="work experience" />
       <section className="work-history">
         <ul className="job-title">Product Development Engineer
@@ -32,6 +32,17 @@ const WorkExperience = () => {
 }
 
 const StyledWrap = styled.div`
+  & #workexp {
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+    @media (max-width: 768px) {
+      top: -102px;
+    }
+    @media (max-width: 425px) {
+      top: -58px;
+    }
+  }
   & .work-history {
     border-bottom: 2px solid #dfd4bf;
   }
