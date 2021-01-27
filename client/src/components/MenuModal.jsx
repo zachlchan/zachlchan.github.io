@@ -35,7 +35,7 @@ const MenuModal = ({ visible, width, height, click }) => {
           </StyledUl>
         </StyledNav>
       </StyledDiv>
-      <Overlay></Overlay>
+      <Overlay onClick={click}></Overlay>
     </div>
   )
 }
