@@ -31,6 +31,14 @@ const Projects = () => {
           <p className="project-desc">
             An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.
           </p>
+          <header className="tech-header">tech used:</header>
+          <div>
+            <ul>
+              <li className="tech-item">JavaScript</li>
+              <li className="tech-item">React Native</li>
+              <li className="tech-item">Geolocation API</li>
+            </ul>
+          </div>
         </div>
       </section>
       <div className="project-divider"/>
@@ -52,6 +60,19 @@ const Projects = () => {
           <p className="project-desc">
             Built an interactive and responsive "add to cart" component using the microservice architecture.
           </p>
+          <header className="tech-header">tech used:</header>
+          <div>
+            <ul>
+              <li className="tech-item">JavaScript</li>
+              <li className="tech-item">React</li>
+              <li className="tech-item">webpack</li>
+              <li className="tech-item">Node.js</li>
+              <li className="tech-item">Express.js</li>
+              <li className="tech-item">MongoDB</li>
+              <li className="tech-item">AWS S3</li>
+              <li className="tech-item">AWS EC2</li>
+            </ul>
+          </div>
         </div>
       </section>
     </StyledWrap>
@@ -70,6 +91,9 @@ const StyledWrap = styled.div`
     @media (max-width: 425px) {
       top: -58px;
     }
+  }
+  & ul {
+    padding-inline-start: 0;
   }
   & .flex-grid {
     display: flex;
@@ -128,6 +152,19 @@ const StyledWrap = styled.div`
   & .project-desc {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+  }
+  & .tech-header {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #cf8a0c;
+    margin-top: 2rem;
+  }
+  & .tech-item {
+    font-size: 0.875rem;
+    color: #000;
+    opacity: 0.5;
+    display: inline-flex;
+    padding: 0.5rem;
   }
 `;
 const StyledCarousel = styled(Carousel)`
