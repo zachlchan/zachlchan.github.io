@@ -21,7 +21,7 @@ const Skills = () => {
             <li>HTML</li>
             <li>CSS</li>
             <li>jQuery</li>
-            <li>Webpack</li>
+            <li>webpack</li>
           </ul>
         </div>
         <div className="back-container">
