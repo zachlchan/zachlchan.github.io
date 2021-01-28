@@ -101,15 +101,15 @@ const StyledWrap = styled.div`
     list-style-type: none;
     margin: 0;
     padding 0;
-    @media (max-width: 768px) {
-      text-align: center;
-    }
   }
   & .nav-item {
     width: fit-content;
     list-style-type: none;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
   }
   & .nav-link {
     position: relative;
@@ -134,10 +134,16 @@ const StyledWrap = styled.div`
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
       transform-origin: 0 50%;
+      @media (max-width: 768px) {
+        transform-origin: 50% 0%;
+      }
     }
     &:hover:after {
       transform: scaleX(1);
       transform-origin:0 50%;
+      @media (max-width: 768px) {
+        transform-origin: 50% 0%;
+      }
     }
   }
   & .overlay {
