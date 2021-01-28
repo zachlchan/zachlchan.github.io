@@ -23,6 +23,11 @@ class App extends Component {
   componentDidMount() {
     this.handleResize();
     window.addEventListener('resize', this.handleResize, false);
+    document.addEventListener('keydown', ({key}) => {
+      if (key === 'Escape' && this.state.showMenu === true) {
+        this.handleDrawerClick();
+      }
+    });
   }
 
   handleResize() {
@@ -36,7 +41,6 @@ class App extends Component {
   }
 
   handleDrawerClick() {
-    console.log('click');
     this.setState({ showMenu: !this.state.showMenu });
   }
 
