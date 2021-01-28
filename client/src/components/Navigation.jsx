@@ -57,16 +57,17 @@ const StyledWrap = styled.div`
   }
   & .nav-link:hover {
     color: #312f2b;
+    font-weight: 500;
     text-decoration: none;
   }
   & .nav-link:after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 1px;
+    height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #312f2b;
+    background-color: #556b2f;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
     transform-origin: 50% 0%;
