@@ -197,7 +197,7 @@ const StyledWrap = styled.div`
     color: #000;
     opacity: 0.5;
     display: inline-flex;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0;
   }
   & .single-img-container {
     flex: 1;
