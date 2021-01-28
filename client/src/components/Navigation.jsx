@@ -54,27 +54,28 @@ const StyledWrap = styled.div`
     color: #312f2b;
     margin: 0.5rem 1rem;
     padding: 0;
-  }
-  & .nav-link:hover {
-    color: #312f2b;
-    font-weight: 500;
-    text-decoration: none;
-  }
-  & .nav-link:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #556b2f;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
-    transform-origin: 50% 0%;
-  }
-  & .nav-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: 50% 0%;
+    &:hover {
+      color: #312f2b;
+      transition: transform 0.2s;
+      transform: scale(1.1);
+      text-decoration: none;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #556b2f;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+      transform-origin: 50% 0%;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: 50% 0%;
+    }
   }
   @media (max-width: 768px) {
     & .horizontal-nav {

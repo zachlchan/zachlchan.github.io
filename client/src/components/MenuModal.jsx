@@ -119,7 +119,8 @@ const StyledWrap = styled.div`
     padding: 0;
     &:hover {
       color: #312f2b;
-      font-weight: 500;
+      transition: transform 0.2s;
+      transform: scale(1.1);
       text-decoration: none;
     }
     &:after {
