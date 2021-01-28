@@ -105,6 +105,7 @@ const StyledWrap = styled.div`
     transition: transform 0.2s;
     &:hover {
       transform: scale(1.1);
+      cursor: pointer;
     }
   }
   & .dl-link {
