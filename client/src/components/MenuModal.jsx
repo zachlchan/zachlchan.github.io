@@ -69,6 +69,7 @@ const StyledSVG = styled.svg`
   transition: transform 0.2s;
   &:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 `;
 const StyledNav = styled.nav`
