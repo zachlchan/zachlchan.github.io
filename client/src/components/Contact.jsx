@@ -25,6 +25,7 @@ const StyledFooter = styled.footer`
   background-color: #dfd4bf;
   & .contact-header {
     padding: 0.5rem;
+    margin-top: 0;
   }
   & .info-container {
     text-align: center;
