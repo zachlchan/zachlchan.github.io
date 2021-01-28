@@ -73,7 +73,7 @@ const StyledSVG = styled.svg`
 `;
 const StyledNav = styled.nav`
   font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: .085rem;
@@ -99,16 +99,17 @@ const StyledA = styled.a`
   color: #312f2b;
   &:hover {
     color: #312f2b;
+    font-weight: 500;
     text-decoration: none;
   }
   &:after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #312f2b;
+    background-color: #556b2f;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
     transform-origin: 0 50%;
