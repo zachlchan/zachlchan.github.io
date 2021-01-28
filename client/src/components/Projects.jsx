@@ -220,8 +220,10 @@ const StyledCarousel = styled(Carousel)`
   & .carousel-indicators > li {
     background-color: #000;
   }
-  & .carousel-indicators > li:hover {
-    transform: scale(1.1);
+  & .carousel-indicators > li:hover,
+    .carousel-indicators > li:focus {
+    transition: transform 0.2s;
+    transform: scale(1.2);
   }
   & .carousel-control-next-icon,
     .carousel-control-prev-icon {
@@ -229,6 +231,7 @@ const StyledCarousel = styled(Carousel)`
   }
   & .carousel-control-next:focus, .carousel-control-next:hover,
     .carousel-control-prev:focus, .carousel-control-prev:hover  {
+    transition: transform 0.2s;
     transform: scale(1.1);
     color: #556b2f;
   }
