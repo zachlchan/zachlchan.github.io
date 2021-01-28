@@ -220,9 +220,17 @@ const StyledCarousel = styled(Carousel)`
   & .carousel-indicators > li {
     background-color: #000;
   }
+  & .carousel-indicators > li:hover {
+    transform: scale(1.1);
+  }
   & .carousel-control-next-icon,
     .carousel-control-prev-icon {
     filter: invert(1);
+  }
+  & .carousel-control-next:focus, .carousel-control-next:hover,
+    .carousel-control-prev:focus, .carousel-control-prev:hover  {
+    transform: scale(1.1);
+    color: #556b2f;
   }
   @media (max-width: 425px) {
     & .carousel-control-next-icon,
