@@ -9,12 +9,11 @@ const About = () => {
     <StyledWrap>
       <a id="about" />
       <div>
-      <img className="profile-photo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" alt="profile photo" />
-      <SectionHeader text="about" />
-      <section className="description">
-        <SectionParagraph text={aboutText} />
-      </section>
-
+        <img className="profile-photo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" alt="profile photo" />
+        <SectionHeader text="about" />
+        <section className="description">
+          <SectionParagraph text={aboutText} />
+        </section>
       </div>
     </StyledWrap>
   )
@@ -38,7 +37,7 @@ const StyledWrap = styled.div`
     display: block;
     max-width: 1024px;
     width: 75%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 0 auto;
     @media (max-width: 768px) {
       margin: 10px auto 10px auto;
     }
