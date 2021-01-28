@@ -9,13 +9,13 @@ const Skills = () => {
       <SectionHeader text="skills" />
       <div className="lang-container">
         <ul className="skill-type">Programming Languages
-          <li>Javascript</li>
+          <li>JavaScript</li>
         </ul>
       </div>
       <div className="flex-grid">
         <div className="front-container">
           <ul className="skill-type">Front End
-            <li>Javascript</li>
+            <li>JavaScript</li>
             <li>React</li>
             <li>React Native</li>
             <li>HTML</li>
