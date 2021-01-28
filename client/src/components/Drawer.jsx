@@ -30,6 +30,11 @@ const StyledLine = styled.line`
 const StyledSVG = styled.svg`
   vertical-align: bottom;
   stroke-width: 1.5;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
 `;
 
 export default Drawer;
