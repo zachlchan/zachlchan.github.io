@@ -40,8 +40,10 @@ const StyledFooter = styled.footer`
     font-size: 2rem;
     margin: 2rem 1rem;
     transition: opacity 250ms;
+    transition: transform 250ms;
     &:hover {
       opacity: 1;
+      transform: scale(1.1);
     }
   }
   & .instructions {
