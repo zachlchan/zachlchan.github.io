@@ -33,11 +33,13 @@ const StyledFooter = styled.footer`
   & .linkedin-icon {
     //color: #cf8a0c;
     color: #556b2f;
+    opacity: 0.7;
     font-size: 2rem;
     margin-bottom: 1rem;
     transition: transform 0.2s;
     &:hover {
-      transform: scale(1.5);
+      //transform: scale(1.5);
+      opacity: 1;
     }
   }
   & .instructions {

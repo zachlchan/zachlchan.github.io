@@ -99,12 +99,14 @@ const StyledWrap = styled.div`
     font-family: 'Work Sans', sans-serif;
     display: inline-block;
     background-color: #cf8a0c;
+    opacity: 0.7;
     border-radius: 3px;
     padding: 0.5rem;
     margin: 1rem;
     transition: transform 0.2s;
     &:hover {
-      transform: scale(1.1);
+      //transform: scale(1.1);
+      opacity: 1;
       cursor: pointer;
     }
   }
