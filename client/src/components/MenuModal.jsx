@@ -6,7 +6,14 @@ let widthVal;
 let heightVal;
 
 const MenuModal = ({ visible, width, height, click }) => {
-  visible ? displayValue = 'flex' : displayValue = 'none';
+  if (visible) {
+    displayValue = 'flex';
+    document.body.style.overflow = 'hidden';
+  } else {
+    displayValue = 'none';
+    document.body.style.overflow = 'visible';
+  }
+
   if (width < 769) {
     widthVal = `${width}px`;
     heightVal = `${height}px`;
