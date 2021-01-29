@@ -25,7 +25,7 @@ const WorkExperience = () => {
       </div>
         <div className="dl-container">
           <div className="dl-button">
-            <a className="dl-link" href="https://zc-portfolio.s3-us-west-1.amazonaws.com/Zach-Chan_Resume.pdf" download="zach-chan_resume">
+            <a target="_blank" rel="noopener noreferrer" className="dl-link" href="https://zc-portfolio.s3-us-west-1.amazonaws.com/Zach-Chan_Resume.pdf" download="zach-chan_resume">
               <FontAwesomeIcon className="dl-icon" icon={faDownload} />
               download resume
             </a>

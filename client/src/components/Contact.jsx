@@ -11,7 +11,7 @@ const Contact = () => {
       <SectionHeader className="contact-header" text="contact" />
       <div className="info-container">
         <SectionParagraph className="instructions" text={contactText} />
-        <a href="https://www.linkedin.com/in/zachlchan/">
+        <a target="_blank" rel="noopener noreferrer" className="dl-link" href="https://www.linkedin.com/in/zachlchan/">
           <FontAwesomeIcon className="linkedin-icon" icon={faLinkedin} />
         </a>
       </div>
