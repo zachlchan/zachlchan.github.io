@@ -6,7 +6,7 @@ let widthVal;
 let heightVal;
 
 const MenuModal = ({ visible, width, height, click }) => {
-  visible ? displayValue = 'block' : displayValue = 'none';
+  visible ? displayValue = 'flex' : displayValue = 'none';
   if (width < 769) {
     widthVal = `${width}px`;
     heightVal = `${height}px`;
@@ -72,7 +72,8 @@ const StyledWrap = styled.div`
     z-index: 22;
   }
   & .close-button {
-    float: right;
+    position: absolute;
+    right: 1%;
     width: 1.5rem;
     margin: 20px;
   }
@@ -96,17 +97,21 @@ const StyledWrap = styled.div`
     letter-spacing: .085rem;
     margin: 0 auto;
     padding: 15%;
+    @media (max-width: 425px) {
+      font-size: 6vw;
+    }
   }
   & .nav-list {
     list-style-type: none;
-    margin: 0;
-    padding 0;
+    margin: auto;
+    padding-bottom: 15%;
+    padding-left: 0;
   }
   & .nav-item {
     width: fit-content;
     list-style-type: none;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     @media (max-width: 768px) {
       margin: 0 auto;
     }
