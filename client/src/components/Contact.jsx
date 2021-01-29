@@ -1,18 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import SectionHeader from './SectionHeader.jsx';
-import SectionParagraph from './SectionParagraph.jsx';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   return (
     <StyledFooter id="contact">
-      <SectionHeader className="contact-header" text="contact" />
       <div className="info-container">
-        <SectionParagraph className="instructions" text={contactText} />
-        <a target="_blank" rel="noopener noreferrer" className="dl-link" href="https://www.linkedin.com/in/zachlchan/">
-          <FontAwesomeIcon className="linkedin-icon" icon={faLinkedin} />
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/zachlchan/">
+          <FontAwesomeIcon className="contact-icon" icon={faLinkedin} />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/zachlchan">
+          <FontAwesomeIcon className="contact-icon" icon={faGithub} />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="mailto:zacharyleechan@gmail.com">
+          <FontAwesomeIcon className="contact-icon" icon={faEnvelopeSquare} />
         </a>
       </div>
     </StyledFooter>
@@ -30,12 +33,12 @@ const StyledFooter = styled.footer`
   & .info-container {
     text-align: center;
   }
-  & .linkedin-icon {
+  & .contact-icon {
     //color: #cf8a0c;
     color: #556b2f;
     opacity: 0.7;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin: 2rem 1rem;
     transition: transform 0.2s;
     &:hover {
       //transform: scale(1.5);
