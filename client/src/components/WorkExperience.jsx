@@ -103,9 +103,8 @@ const StyledWrap = styled.div`
     border-radius: 3px;
     padding: 0.5rem;
     margin: 1rem;
-    transition: transform 0.2s;
+    transition: opacity 250ms;
     &:hover {
-      //transform: scale(1.1);
       opacity: 1;
       cursor: pointer;
     }

@@ -39,9 +39,8 @@ const StyledFooter = styled.footer`
     opacity: 0.7;
     font-size: 2rem;
     margin: 2rem 1rem;
-    transition: transform 0.2s;
+    transition: opacity 250ms;
     &:hover {
-      //transform: scale(1.5);
       opacity: 1;
     }
   }
