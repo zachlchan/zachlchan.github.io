@@ -113,6 +113,7 @@ const StyledWrap = styled.div`
   }
   & .nav-link {
     position: relative;
+    text-align: center;
     text-decoration: none;
     color: #312f2b;
     margin: 0.5rem 1rem;
