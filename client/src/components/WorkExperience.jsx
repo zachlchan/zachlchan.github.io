@@ -101,7 +101,7 @@ const StyledWrap = styled.div`
     background-color: #cf8a0c;
     opacity: 0.7;
     border-radius: 3px;
-    padding: 0.5rem;
+    padding: 0.3rem 0;
     margin: 1rem;
     transition: opacity 250ms;
     &:hover {
@@ -113,6 +113,7 @@ const StyledWrap = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
+    padding: 0.5rem;
     &:hover {
       color: #fff;
       text-decoration: none;
