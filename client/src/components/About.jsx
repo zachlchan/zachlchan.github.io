@@ -11,12 +11,12 @@ const About = () => {
       <a id="about" />
       <div>
         <NextGenIMG
+          className="profile-photo"
           srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.webp"
           srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jxr"
           srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jp2"
           fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg"
           alt="profile photo"
-          className="profile-photo"
         />
         <SectionHeader text="about" />
         <section className="description">
