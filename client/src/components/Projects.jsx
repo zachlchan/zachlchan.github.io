@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
 import SectionHeader from './SectionHeader.jsx';
+import NextGenIMG from './NextGenIMG.jsx';
 
 const Projects = () => {
   return (
@@ -12,17 +13,38 @@ const Projects = () => {
           <StyledCarousel interval={null} wrap={false}>
             <Carousel.Item>
               <div className="img-container">
-                <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.png" alt="start screen"/>
+                <NextGenIMG
+                  className="screen-shot"
+                  srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.webp"
+                  srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.jxr"
+                  srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.jp2"
+                  fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_start.jpeg"
+                  alt="fawego start screen"
+                />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="img-container">
-                <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.png" alt="tracking screen"/>
+                <NextGenIMG
+                  className="screen-shot"
+                  srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.webp"
+                  srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.jxr"
+                  srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.jp2"
+                  fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_tracking.jpeg"
+                  alt="fawego tracking screen"
+                />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="img-container">
-                <img className="screen-shot" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.png" alt="paused screen"/>
+                <NextGenIMG
+                  className="screen-shot"
+                  srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.webp"
+                  srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.jxr"
+                  srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.jp2"
+                  fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/fawego_pause.jpeg"
+                  alt="fawego pause screen"
+                />
               </div>
             </Carousel.Item>
           </StyledCarousel>
@@ -46,7 +68,14 @@ const Projects = () => {
           <StyledCarousel interval={null} wrap={false}>
           <Carousel.Item>
               <div className="img-container">
-                <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.png" alt="atc thumbnail" />
+                <NextGenIMG
+                  className="atc-demo"
+                  srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.webp"
+                  srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.jxr"
+                  srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.jp2"
+                  fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.jpeg"
+                  alt="atc thumbnail"
+                />
               </div>
             </Carousel.Item>
             <Carousel.Item>
@@ -79,7 +108,14 @@ const Projects = () => {
         <section className="flex-grid portfolio">
           <div className="single-img-container">
             <div className="img-container">
-              <img className="portfolio-img" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.png" alt="atc thumbnail" />
+              <NextGenIMG
+                className="portfolio-img"
+                srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.webp"
+                srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jxr"
+                srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jp2"
+                fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jpeg"
+                alt="portfolio thumbnail"
+              />
             </div>
           </div>
           <div className="project-container">
