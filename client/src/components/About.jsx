@@ -9,7 +9,13 @@ const About = () => {
     <StyledWrap>
       <a id="about" />
       <div>
-        <img className="profile-photo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" alt="profile photo" />
+        <picture>
+          <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.webp" type="image/webp" />
+          <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jxr" type="image/webp" />
+          <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jp2" type="image/webp" />
+          <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" type="image/webp" />
+          <img className="profile-photo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/profile-photo.jpeg" alt="profile photo" />
+        </picture>
         <SectionHeader text="about" />
         <section className="description">
           <SectionParagraph text={aboutText} />
