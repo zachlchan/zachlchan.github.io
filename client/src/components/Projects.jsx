@@ -65,25 +65,13 @@ const Projects = () => {
         </section>
       <div className="project-divider"/>
         <section className="flex-grid atc">
-          <StyledCarousel interval={null} wrap={false}>
-          <Carousel.Item>
-              <div className="img-container">
-                <NextGenIMG
-                  className="atc-demo"
-                  srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.webp"
-                  srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.jxr"
-                  srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.jp2"
-                  fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_thumbnail.jpeg"
-                  alt="atc thumbnail"
-                />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="img-container">
-                <img className="atc-demo" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_demo.gif" alt="atc demo" />
-              </div>
-            </Carousel.Item>
-          </StyledCarousel>
+          <div className="single-img-container">
+            <div className="img-container">
+              <video className="atc-demo" controls disablePictureInPicture controlsList="nodownload">
+                <source src="https://zc-portfolio.s3-us-west-1.amazonaws.com/atc_demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
           <div className="project-container">
             <header className="project-name">engineered outfitters</header>
             <p className="project-desc">
@@ -170,13 +158,13 @@ const StyledWrap = styled.div`
     }
   }
   & .flex-grid.atc {
-    @media (max-width: 910px) {
+    @media (max-width: 1024px) {
       display: block;
       width: 100%;
     }
   }
   & .flex-grid.portfolio {
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: block;
     }
   }
@@ -197,10 +185,9 @@ const StyledWrap = styled.div`
     border-radius: 15px;
   }
   & .atc-demo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
+    border: 1px solid;
+    max-width: 600px;
+    width: 100%;
     @media (max-width: 910px) {
       width: 100%;
     }
