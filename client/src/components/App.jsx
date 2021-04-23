@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header.jsx';
-import MenuModal from './MenuModal.jsx';
+import MenuModal from './navigation_components/MenuModal.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
 import Skills from './Skills.jsx';

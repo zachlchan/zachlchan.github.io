@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Navigation from './Navigation.jsx';
-import Drawer from './Drawer.jsx';
+import Navigation from './navigation_components/Navigation.jsx';
+import Drawer from './navigation_components/Drawer.jsx';
 
 let name = '';
 
