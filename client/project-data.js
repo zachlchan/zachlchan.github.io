@@ -3,8 +3,8 @@ export const projectData = [
     FAWEGO Project
   */
   {
-    projectName: 'fawego',
-    projectDesc: 'An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.',
+    name: 'fawego',
+    description: 'An activity tracking mobile application. Built using React Native and the Geolocation API with Apple Maps.',
     techUsed: [
       'JavaScript',
       'React Native',
@@ -36,8 +36,8 @@ export const projectData = [
     ATC Project
   */
   {
-    projectName: 'engineered outfitters',
-    projectDesc: 'An interactive and responsive "add to cart" component using the microservice architecture and deployed using AWS EC2.',
+    name: 'engineered outfitters',
+    description: 'An interactive and responsive "add to cart" component using the microservice architecture and deployed using AWS EC2.',
     techUsed: [
       'JavaScript',
       'React',
@@ -58,8 +58,8 @@ export const projectData = [
     Portfolio Project
   */
     {
-      projectName: 'portfolio (this site)',
-      projectDesc: 'A responsive single page portfolio website built from scratch and hosted using GitHub Pages.',
+      name: 'portfolio (this site)',
+      description: 'A responsive single page portfolio website built from scratch and hosted using GitHub Pages.',
       techUsed: [
         'JavaScript',
         'React',
