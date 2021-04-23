@@ -22,8 +22,6 @@ const Contact = () => {
   )
 }
 
-const contactText = 'add me on linkedin';
-
 const StyledFooter = styled.footer`
   background-color: #dfd4bf;
   & .contact-header {
