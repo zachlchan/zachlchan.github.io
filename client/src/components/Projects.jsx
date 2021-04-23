@@ -98,7 +98,7 @@ const Projects = () => {
             <div className="img-container">
               <NextGenIMG
                 className="portfolio-img"
-                srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.webp 1024w, https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail_mobile.webp 640w"
+                srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail_mobile.webp 640w, https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.webp 1024w"
                 srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jxr"
                 srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jp2"
                 fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jpeg"
