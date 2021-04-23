@@ -96,17 +96,14 @@ const Projects = () => {
         <section className="flex-grid portfolio">
           <div className="single-img-container">
             <div className="img-container">
-              <picture>
-                <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail_mobile.webp 800w,
-                                https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.webp 1024w"
-                        sizes="(max-width:768px) 800px,
-                              1024px"
-                        type="image/webp" />
-                <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jxr" type="image/jxr" />
-                <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jp2" type="image/jp2" />
-                <source srcSet="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jpeg" type="image/jpeg" />
-                <img className="portfolio-img" src="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jpeg" alt="portfolio thumbnail" />
-              </picture>
+              <NextGenIMG
+                className="portfolio-img"
+                srcWebp="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.webp"
+                srcJxr="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jxr"
+                srcJp2="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jp2"
+                fallback="https://zc-portfolio.s3-us-west-1.amazonaws.com/portfolio_thumbnail.jpeg"
+                alt="portfolio thumbnail"
+              />
             </div>
           </div>
           <div className="project-container">
