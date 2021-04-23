@@ -10,7 +10,7 @@ const NextGenIMG = ({
   ...props
 }) => (
   <picture>
-    <source srcSet={srcWebp} type="image/webp" />
+    <source srcSet={srcWebp} sizes={sizes} type="image/webp" />
     <source srcSet={srcJxr} type="image/jxr" />
     <source srcSet={srcJp2} type="image/jp2" />
     <source srcSet={fallback} type="image/jpeg" />
